@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int rounds;
+    cin >> rounds;
+
+    for(int i = 0; i < rounds; i++){
+
+        int transitions = 0;
+        int length;
+        string number;
+        cin >> length >> number;
+        for(int j = 0; j < length -1; j++){
+
+            if(number[j] != number[j+1]){
+                transitions++;
+            }
+        }
+
+
+        if(transitions == 1){
+            cout << "2";
+        } else {
+            cout << "1";
+        }
+    }
+
+
+
+     
+}
